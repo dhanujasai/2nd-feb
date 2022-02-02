@@ -1,0 +1,17 @@
+#include<stdio.h>
+int fact(int);
+int main()
+{
+    int h;
+    printf("enter h value");
+    scanf("%d",&h);
+    printf("%d",fact(h));
+}
+int fact(int h)
+{
+    if(h==0)
+    return 1;
+    else
+    return h*fact(h-1);
+
+}
